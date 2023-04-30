@@ -1,0 +1,14 @@
+ls command ni list disate folders chi
+cd command ni folders chya madhe jata yete,
+touch command ni file banavata yete eg: touch text.txt,
+start text.txt ne ti file use karta yete,
+cd ~ ne back jata yete ,
+mkdir ne navin  folder create karta yete
+
+
+
+we use npm init to get external package from npm.
+then we install that module which code we get from the site.
+
+npm install express ni express install hote
+s
