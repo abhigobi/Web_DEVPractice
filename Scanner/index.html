@@ -24,3 +24,22 @@
         });
 
        
+ scanner.render(sucess,error);
+
+        function sucess(result){
+
+            document.getElementById('result').innerHTML = `
+            <h2>sucess!</h2>
+            <p><a href="${result}">${result}</a></p>
+            `;
+
+            scanner.clear();
+            document.getElementById('reader').remove();   
+        }
+
+        function error(err){
+            console.error(err);
+        }
+    </script>
+</body>
+</html>
