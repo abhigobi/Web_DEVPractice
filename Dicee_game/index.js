@@ -1,29 +1,28 @@
-//$("h1").css("color" ,"green");
+var randomnumber1 = Math.floor((Math.random() * 6)+1);
 
-//$("h1").addClass("big-title"); 
+var randomdiceImg1 = "dice" + randomnumber1 + ".png";
 
-// We can also add the another class 
+var randomimg1 = "images/" + randomdiceImg1;
+var image1 = document.querySelectorAll("img")[0];
+image1.setAttribute("src" , randomimg1);
 
-//$("h1").addClass("big-title margin")
+var randomnumber2 = Math.floor((Math.random()*6 )+1);
 
-// we can also change the attribute class
+var randomimg2 = "images/dice" + randomnumber2 + ".png";
 
-//console.log($("a").attr("href"));
+document.querySelectorAll("img")[1].setAttribute("src" , randomimg2);
 
-// We can also set the value to it 
-
-//console.log($("a").attr("href" , "www.yahoo.com"));
-
-// using the eventlistner 
-
-/*$("h1").click(function()
+if(randomnumber1 > randomnumber2)
 {
-    $("h1").css("color", "purple")
-});*/
-
-for(var i=0;i<5;i++)
-{
-    document.querySelectorAll("button")[i].addEventListener("click" , function(){
-        document.querySelector("h1").style.color=purple;
-    });
+    document.querySelector("h1").innerHTML = "Player1 wins";
 }
+else if(randomnumber2 > randomnumber1)
+{
+    document.querySelector("h1").innerHTML="Player2 wins";
+}
+else
+{
+    document.querySelector("h1").innerHTML = "It's draw";
+}
+
+
