@@ -40,7 +40,20 @@
                     <label for="email">Email</label>
                 </div>
             </form> -->
-        
+        div class="container">
+
+        <!-- <div class="alert alert-success alert-dismissible">
+        alert
+        <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
+    </div> -->
+
+    <!-- <div class="card">
+
+        <div class="card-body">
+            <h2 class="card-header">student details</h2>
+            sdkfuybgvekgbiuerhhgorh iuygrgkjbrgkurhgk iurghfrkghgkjn 
+        </div>
+    </div> -->
         </div>
 </body>
 </html>
